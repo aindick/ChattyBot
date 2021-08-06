@@ -12,7 +12,7 @@
   {"tag": "age",
     "patterns": ["age?", "what's your age?", "how old are you?"],
     "responses": ["Hey! That's not very nice to ask!", "Old enough."]},
-  {"tag": "encouragment",
+  {"tag": "encouragement",
     "patterns": ["I'm sad", "sad", "I'm depressed","depressed", "depressing", "I need encouragment", "encourage me"],
     "responses": ["Don't be sad!", "You got this!", "You can do it!", "I believe in you!", "You're cool!" ]}
 ]}
