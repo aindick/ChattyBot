@@ -24,7 +24,7 @@ def bag_of_words(sentence):  # converts a sentence into a list of zeroes and one
     sentence_words = clean_up(sentence)
     bag = [0] * len(words)
     for w in sentence_words:
-        for i, in enumerate(words):
+        for i, word in enumerate(words):
             if word == w:
                 bag[i] = 1
     return np.array(bag)
@@ -39,4 +39,19 @@ def predict_class(sentence):
     return_list = []
     for r in res:
         return_list.append({'intents': classes[r[0]], 'probability': str(r[1])})
-    return_list
+    return return_list
+def get_responses(intents_list, intents_json):
+    tag = intents_list[0]['intent']
+    list_of_intents = intents_json['intents']
+    for i in list_of_intents:
+        if i['tag'] == tag:
+            result = random.choice(i['responses'])
+            break
+    return result
+print("Bot is running!")
+
+while True:
+    message = input("")
+    ints = predict_class(message)
+    res = get_responses(ints, intents)
+    print(res)
