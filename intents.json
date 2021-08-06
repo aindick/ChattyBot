@@ -1,0 +1,18 @@
+{"intents":[
+  {"tag": "greetings",
+    "patterns": ["hello", "hi", "hai", "hey", "good day", "greetings", "how's it going?", "what's up?"],
+    "responses": ["Hey!", "Hello!", "Hai!", "Godd Day!", "Hi!", "What can I do for you?"]
+  },
+  {"tag": "goodbye",
+    "patterns": ["goodbye", "bye", "see ya", "cya", "see you", "see you later", "cya later", "later"],
+    "responses": ["Goodbye!!", "Bye!", "See ya!", "Cya!", "Have a good day!", "Later!"]},
+  {"tag": "name",
+    "patterns": ["what's your name?", "who are you?", "what should I call you?", "name?"],
+    "responses": ["Call me Chatty!", "I'm Chatty!", "My name is Chatty! I'm Lex's assistant :) "]},
+  {"tag": "age",
+    "patterns": ["age?", "what's your age?", "how old are you?"],
+    "responses": ["Hey! That's not very nice to ask!", "Old enough."]},
+  {"tag": "encouragment",
+    "patterns": ["I'm sad", "sad", "I'm depressed","depressed", "depressing", "I need encouragment", "encourage me"],
+    "responses": ["Don't be sad!", "You got this!", "You can do it!", "I believe in you!", "You're cool!" ]}
+]}
